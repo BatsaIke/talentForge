@@ -8,7 +8,7 @@
   font-size: 18px;
   text-align: center;
   padding-bottom: 20px;
-  color: #fe904b;
+  color: #0D324A;
   font-weight: 600;
 }
 .blogPost {
@@ -18,12 +18,13 @@
   flex-direction: column;
   align-items: center; /* Center horizontally */
   justify-content: center; /* Center vertically */
-  border-bottom: 3px solid #333;
+  border-bottom: 3px solid #999999;
 }
 
 .postTitle {
   font-size: 14px;
   text-align: center; /* Center the title text */
+  color: #336699;
  
 }
 
@@ -39,7 +40,7 @@
   
 .readMoreLink {
   padding: 4px 15px 4px 15px;
-  background-color: #0f2839;
+  background-color: #336699;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -50,5 +51,5 @@
 }
 
 .readMoreLink:hover {
-  background-color: #2980b9;
+  background-color: #0D324A;
 }

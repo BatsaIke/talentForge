@@ -32,8 +32,8 @@
   }
   
   .companyName {
-    font-size: 12px; /* Reduced font size for company name */
-    color: #777;
+    font-size: 10px; /* Reduced font size for company name */
+    color: #ECECEC;
   }
   
   /* styles/JobOffers.module.css */
@@ -55,20 +55,22 @@
   }
   
   .readMoreButton {
-    padding: 5px 8px; /* Adjusted padding */
+    padding: 5px 10px 5px 10px; /* Adjusted padding */
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
-    color: #060606;
+    color: #ffffff;
+    font-size: 10px;
   }
   
   .applyButton {
-    padding: 5px 8px; /* Adjusted padding */
+    padding: 3px 15px 3px 15px; /* Adjusted padding */
     background-color: #ff7e5f;
     color: #fff;
     border: 1px solid #ffffff;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 10px;
   }
   
   .jobOffers {

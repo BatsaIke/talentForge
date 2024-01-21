@@ -1,5 +1,6 @@
 // components/LandingPage.js
 import styles from './LandingPage.module.css';
+import NetworkPage from './components/NetworkPage';
 import BlogPage from './components/blog-page/BlogPage';
 import ForBusiness from './components/forBusiness/ForBusiness';
 import ForStudents from './components/forStudents/ForStudents';
@@ -30,8 +31,15 @@ const LandingPage = () => {
           <div className={styles.rightItemBusines}>
             <ForBusiness/>
           </div>
-          <div className={styles.rightItemNetwork}><ForBusiness/></div>
-          <div className={styles.rightItemSignup}> <ForStudents/></div>
+          <div className={styles.rightItemNetwork}>
+            <NetworkPage/>
+          </div>
+          <div className={styles.rightItemSignup}> 
+          <div className={styles.signupDiv}>
+          <p>Perfect Career Mentorhsip Opportunity is Just a Click Away</p>
+          <button className={styles}> Sign Up</button>
+          </div>
+          </div>
         </div>
       </div>
     </div>

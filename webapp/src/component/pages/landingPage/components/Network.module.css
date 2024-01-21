@@ -1,0 +1,65 @@
+/* styles/ForNetworkPage.module.css */
+
+.pageContainer {
+    display: flex;
+  }
+  
+  .leftContainer {
+    flex: 1;
+    padding: 60px 0px 0px 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rightContainer {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rightImage {
+    width: 90%;
+    height: 90%;
+    padding: 20px 20px 20px 0px;
+  }
+  
+  .textContainer {
+    margin-bottom: 20px;
+   
+  }
+
+  .textContainer p{
+    color: #ffff;
+    font-size: 20px;
+  }
+  
+  .passionateColor {
+    color: #f7a876; /* Set your desired color for the passionate text */
+  }
+  
+  
+  .headersContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .header img {
+    width: 60px; /* Set your desired width for the icons */
+    height: 40px; /* Set your desired height for the icons */
+   margin-left: 50px;
+   padding-right: 10px;
+  }
+  
+  .header p{
+    font-size: 28px;
+    color: #fff;
+  }
