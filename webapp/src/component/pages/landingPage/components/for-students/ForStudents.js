@@ -1,6 +1,7 @@
 // components/LandingPage.js
 import Image from 'next/image';
 import styles from './ForStudents.module.css';
+import Link from 'next/link';
 
 const ForStudents = () => {
   return (
@@ -10,12 +11,12 @@ const ForStudents = () => {
         <div className={styles.leftContent}>
           <div className={styles.leftItem}>For Students</div>
           <div className={styles.leftItemContent}>
-            <h2 style={{ width: 300, color: '#2D2F34' }}>
+            <h2 style={{ width: 300, color: '#2D2F34', marginBottom:"25px", textAlign:"left" }}>
               Hone your skills with first-hand industry experience
             </h2>
-            <button className={styles.applyButton}>Apply Here</button>
+            <Link href={"login"} className={styles.applyButton}>Apply Here</Link>
             <div className={styles.sectionText}>
-              <p style={{ fontSize: 12, width: 400 }}>
+              <p style={{ fontSize: 14, width: 400,padding: 10 }}>
                 Get your next internship appointment. Join this network{' '}
                 <br></br>of businesses with job opportunities in various
                 industries.

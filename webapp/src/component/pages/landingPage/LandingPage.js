@@ -1,9 +1,10 @@
 // components/LandingPage.js
+import Link from 'next/link';
 import styles from './LandingPage.module.css';
 import NetworkPage from './components/NetworkPage';
 import BlogPage from './components/blog-page/BlogPage';
-import ForBusiness from './components/forBusiness/ForBusiness';
-import ForStudents from './components/forStudents/ForStudents';
+import ForBusiness from './components/for-business/ForBusiness';
+import ForStudents from './components/for-students/ForStudents';
 import JobOffers from './components/job-offers/JobOffers';
 import RisingTalents from './components/rising-talents/RisingTalent';
 
@@ -37,7 +38,7 @@ const LandingPage = () => {
           <div className={styles.rightItemSignup}> 
           <div className={styles.signupDiv}>
           <p>Perfect Career Mentorhsip Opportunity is Just a Click Away</p>
-          <button className={styles}> Sign Up</button>
+          <Link href={"signup"} className={styles.signupDivLink}> Sign Up</Link>
           </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 // components/LandingPage.js
 import Image from 'next/image';
 import styles from './ForBusiness.module.css';
+import Link from 'next/link';
 
 const ForBusiness = () => {
   return (
@@ -27,7 +28,7 @@ const ForBusiness = () => {
             <h2 style={{ width: 300, color: '#2D2F34', textAlign: "right" }}>
               Get involved in shaping the next generation of workers
             </h2>
-            <button className={styles.applyButton}>Sign Up</button>
+            <Link href={"signup"}className={styles.applyButton}>Sign Up</Link>
             <div className={styles.sectionText}>
               <p style={{ fontSize: 12, width: 400, textAlign: "right" }}>
                 Hire a pre vetted coah-able intern interest and  {' '}

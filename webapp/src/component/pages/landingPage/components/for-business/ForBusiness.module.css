@@ -45,6 +45,12 @@
     cursor: pointer;
     border-radius: 10px;
     background-color: transparent;
+    text-decoration: none;
+}
+.applyButton:hover{
+    background-color: #fe904b;
+    color: #fff;
+    border: none;
 }
 
 .sectionText {

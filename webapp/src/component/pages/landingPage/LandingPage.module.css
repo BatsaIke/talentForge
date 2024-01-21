@@ -100,7 +100,7 @@
 .signupDiv p{
   font-size: 25px;
 }
-.signupDiv button{
+.signupDivLink{
   padding: 10px 35px 10px 35px; /* Adjusted padding */
     background-color: #ff2828;
     color: #fff;
@@ -109,8 +109,9 @@
     cursor: pointer;
     font-size: 10px;
     margin-top: 20px;
+    text-decoration: none;
 }
-.signupDiv button:hover{
+.signupDivLink:hover{
   background-color: #f7a876;
 
 }
