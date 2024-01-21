@@ -1,0 +1,51 @@
+/* Logo.css */
+.logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .leftText,
+  .rightText {
+    font-family: Rubik;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0; /* Remove default margins */
+  }
+  
+  .leftText {
+    
+    margin-right: 5px; /* Adjust the spacing between the text and the logo */
+  }
+  
+  .rightText {
+    margin-left: 5px; /* Adjust the spacing between the logo and the text */
+  }
+  
+  .logoImage {
+    width: 80px; /* Set a suitable width for your logo */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  
+  /* Media query for smaller screens, e.g., mobile devices */
+  @media (max-width: 767px) {
+    .logoContainer {
+      flex-direction: column; /* Change to a column layout on smaller screens */
+      align-items: center; /* Center align items */
+    }
+  
+    .leftText,
+    .rightText {
+      text-align: center; /* Center align text on smaller screens */
+      margin: 5px 0; /* Adjust margin for spacing on smaller screens */
+    }
+  
+    .logoImage {
+      width: 80px; /* Adjust the width for smaller screens */
+    }
+  
+    .logo-div {
+      margin-top: 5px; /* Adjust the top margin for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,91 @@
+/* styles/LandingPage.module.css */
+
+.container {
+    display: flex;
+    width: 100%;
+   
+  }
+  
+  .leftColumn {
+    flex: 1;
+    background-color: #f0f0f0;
+  }
+  
+  .leftContent {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 10px 0px;
+  }
+  
+  .leftItem {
+    padding: 10px;
+    background-color: #e0e0e0;
+  }
+
+  .leftItemRising {
+    padding: 10px;
+    background-color: #f5f4f4;
+  }
+  .leftItemBlog {
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .rightColumn {
+    flex: 4;
+  }
+  
+  .rightContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+  }
+
+  .rightItem {
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    background: linear-gradient(to bottom right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+border-bottom-right-radius: 50%;
+}
+ 
+
+.rightItem::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;  /* Adjust the width of the fade */
+    height: 20px; /* Adjust the height of the fade */
+}
+.rightItemNetwork,
+.rightItemSignup,
+.rightItemBusines{
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+
+.jobOffers {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Adjust colors as needed */
+  color: white; /* Set text color to contrast with the gradient */
+  padding: 10px 10px 10px 10px;
+}
+
+  /* Responsive styles */
+@media (max-width: 768px) {
+    .landingPage {
+      flex-direction: column;
+    }
+  
+    .leftColumn,
+    .rightColumn {
+      flex: 1;
+    }
+  }
+
+
+
+  

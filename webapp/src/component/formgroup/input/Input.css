@@ -1,0 +1,23 @@
+/* MyInput.css */
+
+/* Default styles for larger screens */
+.my-input {
+  padding: 15px;
+  border: none;
+  border-radius: 24px;
+  min-width: 260px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.my-input::placeholder {
+  padding: 20px; 
+  padding-left: 2px;
+}
+
+/* Media query for smaller screens, e.g., mobile devices */
+@media (max-width: 767px) {
+  .my-input {
+    max-width: 100%; /* Full width on smaller screens */
+    min-width: 100; /* No minimum width on smaller screens */
+  }
+}

@@ -1,0 +1,108 @@
+/* styles/Header.module.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(to right, white, #999999); /* Adjust colors as needed */
+    color: white;
+    position: relative;
+  }
+  
+  .logo {
+    order: 1;
+    padding: 10px 10px 10px 50px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 10px;
+    order: 2;
+  }
+  
+  .navItem {
+    padding: 0 20px;
+    color: black;
+    position: relative;
+    font-weight: 400;
+    text-decoration: none;
+    /* font-family: Rubik serif; */
+    
+  }
+  
+  .navItem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; /* Adjust the position as needed */
+    bottom: 0;
+    width: 1.5px;
+    background-color: black;
+}
+  
+  .navItem:first-child::before {
+    display: none; /* Hide the separator for the first item */
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    order: 3;
+  }
+  
+  .applyButton,
+  .hireButton {
+    border-radius: 9px;
+    font-weight: 200;
+    padding: 7px 15px 7px 15px;
+  }
+  
+  .applyButton:hover,
+  .hireButton:hover {
+      background-color: #f7a876;
+      border: 1.5px solid #ffffff;
+      color: #ffffff;
+  }
+  .loginButton {
+    padding: 7px;
+    border-radius: 5px;
+    color: black;
+    margin-right: 100px;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+}
+  .loginButton:hover{
+    background-color: #f7a876;
+    border: 1.5px solid #ffffff;
+    color: #ffffff;
+    padding: 7px 15px 7px 15px;
+
+}
+  
+  .applyButton {
+    border: 2px solid #ff2828;
+}
+.hireButton{
+    background-color: #ff2828;
+    color: #ffffff;
+    border: none;
+}
+
+
+  
+ 
+  
+  /* Spiderweb overlay */
+ /* .header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/polygon.png') repeat center;
+    opacity: 0.6; /* Adjust the opacity as needed 
+  }
+  */

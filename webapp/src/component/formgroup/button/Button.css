@@ -1,0 +1,48 @@
+/* MyButton.css */
+
+.my-button {
+  font-family: Rubik;
+  font-weight: 300;
+  position: relative;
+  background-color: #fe904b;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  padding: 15px;
+  min-width: 260px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.my-button:hover {
+  background-color: #ff2828;
+}
+
+.icon-right {
+  position: absolute;
+  right: 15px; /* Adjust the right position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+}
+.red-button {
+  /* Styles for the red button */
+  background-color: #ff2828;
+  /* Add other styles as needed */
+}
+
+.my-button:hover {
+  background-color: #fe904b;
+}
+
+/* Media query for smaller screens, e.g., mobile devices */
+@media (max-width: 767px) {
+  .my-button {
+      max-width: 90%; /* Full width on smaller screens */
+      min-width: 90%;
+  }
+
+  .icon-right {
+      right: 10px; /* Adjust the right position for smaller screens */
+  }
+}
