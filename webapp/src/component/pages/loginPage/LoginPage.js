@@ -19,7 +19,7 @@ const LoginPage = () => {
   const onSubmit = (data) => {
     // Handle form submission
     console.log(data);
-  };
+  }; 
 
   return (
     <div className="auth-page">

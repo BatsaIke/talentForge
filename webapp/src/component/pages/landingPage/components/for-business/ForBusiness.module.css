@@ -3,16 +3,27 @@
 .container {
     display: flex;
     width: 100%;
+    padding-right: 30px;
+    box-sizing: content-box;
+    
 }
 
+.leftColumn,
 .rightColumn {
     flex: 1;
+    overflow:inherit;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px ;
 }
 
 .rightContent {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+   
+    justify-content: center;
+    
 }
 
 
@@ -58,13 +69,10 @@
     /* margin-bottom: 50px; */
 }
 
-.rightColumn {
-    flex: 1;
-    margin-right: 30px;
-}
+
 
 .leftContent {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 20px 20px;
+    padding: 10px;
 }

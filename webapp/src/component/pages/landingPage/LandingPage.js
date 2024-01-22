@@ -32,15 +32,16 @@ const LandingPage = () => {
           <div className={styles.rightItemBusines}>
             <ForBusiness/>
           </div>
-          <div className={styles.rightItemNetwork}>
+         
             <NetworkPage/>
-          </div>
-          <div className={styles.rightItemSignup}> 
+            <div className={styles.rightItemSignup}> 
           <div className={styles.signupDiv}>
           <p>Perfect Career Mentorhsip Opportunity is Just a Click Away</p>
           <Link href={"signup"} className={styles.signupDivLink}> Sign Up</Link>
           </div>
           </div>
+         
+          
         </div>
       </div>
     </div>

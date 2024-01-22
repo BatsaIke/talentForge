@@ -1,0 +1,72 @@
+
+  
+
+  /* YourComponent.module.css */
+.container {
+    display: flex;
+  }
+  
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px; /* Add padding if needed */
+    background-color: #f0f0f0;
+  }
+  
+  .leftColumn {
+    flex: 3;
+    width: 30%;
+    padding: 5px 10px 10px 0px;
+  }
+  
+  .rightColumn {
+    flex: 7;
+    width: 70%;
+    background-color: #fff;
+  }
+  
+
+  
+.signupDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .signupDiv p {
+    font-size: 25px;
+  }
+  
+  .signupDivLink {
+    padding: 10px 35px 10px 35px;
+    background-color: #ff2828;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+  
+  .signupDivLink:hover {
+    background-color: #f7a876;
+  }
+  
+  .rightItemSignup {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/white.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  
+  }
+  

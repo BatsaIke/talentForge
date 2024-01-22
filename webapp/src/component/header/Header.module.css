@@ -5,8 +5,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(to right, white, #999999); /* Adjust colors as needed */
-    color: white;
+    background-image: url('/header.png'); 
+    background-position: center;
+    background-size: cover; /* Cover the entire container while maintaining aspect ratio */
+    background-repeat: no-repeat;     color: white;
     position: relative;
   }
   
@@ -90,19 +92,87 @@
     border: none;
 }
 
+.mobileLinks{
+  display: none;
+
+}
+
+.navItemMobile{
+ display: none;
+}
+
+
+
+.menuButton{
+  display: none;
+}
 
   
- 
-  
-  /* Spiderweb overlay */
- /* .header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/polygon.png') repeat center;
-    opacity: 0.6; /* Adjust the opacity as needed 
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    display: none !important;
   }
-  */
+  .menuButton{
+    display: block;
+  }
+  .buttons{
+    display: none;
+  }
+  .mobileLinks {
+    position: absolute;
+    top: 100px;
+    right: 0 ;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--darkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.navItemMobile {
+    display: flex;
+    text-decoration: none !important;
+    color: #fff;
+    font-weight: 600;
+    align-items: left;
+    text-align: left !important;
+    padding: 5px;
+}
+  
+  .navItemMobile{
+    display: flex;
+    text-decoration: none !important;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+  }
+  
+  .buttonsMobile{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: left;
+  }
+  .buttonsMobile button{
+    padding: 5px;
+    margin-top: 8px;
+  }
+  
+  .loginButton{
+    color: #fff;
+  }
+    
+ .mobileDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+ }
+}

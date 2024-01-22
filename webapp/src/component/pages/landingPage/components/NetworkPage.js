@@ -16,11 +16,11 @@ const NetworkPage = () => {
         </div>
         <div className={styles.headersContainer}>
           <div className={styles.header}>
-            <img src="/talentforge.png" alt="Network" />
+            <Image src="/talentforge.png"width={60} height={60} alt="Network" />
             <p>Network</p>
           </div>
           <div className={styles.header}>
-            <img src="/talentforge.png" alt="Learn" />
+            <Image src="/talentforge.png"width={60} height={60} alt="Learn" />
             <p>Learn</p>
           </div>
           <div className={styles.header}>

@@ -28,7 +28,7 @@ const RegisterPage = () => {
                 {/* <img src="login-image.png" alt="Login Image" className='login-image'/> */}
             </div>
             <div className="right-half">
-                <div className="logo-div">
+                <div className="logo-div"> 
                     <Logo />
                 </div>
 

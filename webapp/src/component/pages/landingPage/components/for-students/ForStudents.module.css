@@ -5,15 +5,18 @@
     width: 100%;
 }
 
-.leftColumn {
+.leftColumn ,
+.rightColumn {
     flex: 1;
-    margin-left: 30px;
+    overflow:inherit;
+    flex-shrink: 0;
+    padding-top: 50px
 }
 
 .leftContent {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
 }
 
 .leftItem {
@@ -44,12 +47,11 @@
     /* margin-bottom: 50px; */
 }
 
-.rightColumn {
-    flex: 1;
-}
+
 
 .rightContent {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 20px 20px;
+    padding-right: 50px;
+    box-sizing: border-box;
 }

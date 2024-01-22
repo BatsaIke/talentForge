@@ -1,19 +1,24 @@
 /* styles/LandingPage.module.css */
 
+
 .container {
   display: flex;
-  width: 100%;
+  align-items: stretch;
+  justify-content: baseline;
+  box-sizing: inherit;
 }
 
 .leftColumn {
-  flex: 1;
   background-color: #f0f0f0;
+  flex: 3;
+  width: 30%;
 }
 
 .leftContent {
   display: flex;
   flex-direction: column;
   padding: 5px 10px 10px 0px;
+  justify-content: flex-end;
 }
 
 .leftItem {
@@ -25,71 +30,39 @@
   padding: 10px;
   background-color: #ececec;
 }
+
 .leftItemBlog {
   padding: 10px;
-  background-color: #fff;
+  
 }
 
 .rightColumn {
-  flex: 4;
+  flex: 7;
+  width: 70%;
 }
 
 .rightContent {
   display: flex;
   flex-direction: column;
   padding-top: 5px;
+  box-sizing: border-box;
+ 
 }
 
 .rightItem {
   margin-bottom: 10px;
   padding: 20px;
   background-color: #fff;
-  position: relative;
-  background: linear-gradient(
-    to bottom right,
-    #fff 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  border-bottom-right-radius: 50%;
-}
-
-.rightItem::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 20px; /* Adjust the width of the fade */
-  height: 20px; /* Adjust the height of the fade */
+  box-sizing: border-box;
 }
 
 .rightItemBusines {
   margin-bottom: 10px;
-  padding: 20px;
+  padding-right: 40px;
   background-color: #fff;
 }
 
-.rightItemNetwork {
-  width: 100%; /* Set the width as needed */
-  height: 65vh; /* Set the height to cover the full viewport height */
-  background-image: url('/blue-orange.png');
-  background-size: cover; /* Maintain aspect ratio and cover the container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Ensure the background image is not repeated */
-}
-
-.rightItemSignup {
-  width: 100%; /* Set the width as needed */
-  height: 63vh; /* Set the height to cover the full viewport height */
-  background-image: url('/white-gradient-bg.png');
-  background-size: cover; /* Maintain aspect ratio and cover the container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Ensure the background image is not repeated */
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
-
-.signupDiv{
+.signupDiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,31 +70,42 @@
   width: 400px;
   text-align: center;
 }
-.signupDiv p{
+
+.signupDiv p {
   font-size: 25px;
 }
-.signupDivLink{
-  padding: 10px 35px 10px 35px; /* Adjusted padding */
-    background-color: #ff2828;
-    color: #fff;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 10px;
-    margin-top: 20px;
-    text-decoration: none;
+
+.signupDivLink {
+  padding: 10px 35px 10px 35px;
+  background-color: #ff2828;
+  color: #fff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-top: 20px;
+  text-decoration: none;
 }
-.signupDivLink:hover{
+
+.signupDivLink:hover {
   background-color: #f7a876;
+}
+
+.rightItemSignup {
+  width: 100%;
+  height: 60vh;
+  /* background-image: url('/white.png'); */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
 
 }
+
 .jobOffers {
-  background: linear-gradient(
-    to right,
-    #0d324a,
-    #336699
-  ); /* Adjust colors as needed */
-  color: white; /* Set text color to contrast with the gradient */
+  background: linear-gradient(to right, #0d324a, #336699);
+  color: white;
   padding: 10px 10px 10px 10px;
 }
 
@@ -135,4 +119,9 @@
   .rightColumn {
     flex: 1;
   }
+}
+
+.left-content,
+.right-content {
+  flex: 1;
 }
