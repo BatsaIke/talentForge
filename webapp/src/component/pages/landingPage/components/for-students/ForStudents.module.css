@@ -1,57 +1,93 @@
 /* styles/ForStudents.module.css */
 
 .container {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
-.leftColumn ,
+.leftColumn,
 .rightColumn {
-    flex: 1;
-    overflow:inherit;
-    flex-shrink: 0;
-    padding-top: 50px
+  flex: 1;
+  overflow: inherit;
+  flex-shrink: 0;
+  padding-top: 50px;
 }
 
 .leftContent {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .leftItem {
-    margin-bottom: 10px;
-    padding: 10px 0px 0px 0px;
-    color: #fe904b;
-    font-weight: 600;
+  margin-bottom: 10px;
+  padding: 10px 0px 0px 0px;
+  color: #fe904b;
+  font-weight: 600;
 }
-
-
+.leftItemContent h2 {
+  width: 300;
+  color: '#2D2F34';
+  margin-bottom: 25px;
+  text-align: left;
+}
 .applyButton {
-    margin-top: 20px;
-    padding: 10px 30px 10px 30px;
-    background-color: #fe904b;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 30px 10px 30px;
+  background-color: #fe904b;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
 }
-.applyButton:hover{
-    background-color: #ff2828;
-    color: #fff;
+
+.applyButton:hover {
+  background-color: #ff2828;
+  color: #fff;
 }
 
 .sectionText {
-    margin-top: 15px;
-    /* margin-bottom: 50px; */
+  margin-top: 15px;
+  /* margin-bottom: 50px; */
+}
+.sectionText p {
+  font-size: 14;
+  width: 400;
+  padding: 10;
 }
 
-
-
 .rightContent {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  box-sizing: border-box;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    padding-right: 50px;
-    box-sizing: border-box;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+    padding-top: 20px; /* Adjust the top padding for better spacing on mobile */
+  }
+
+  .leftContent {
+    padding: 10px;
+  }
+
+  .applyButton {
+    margin-top: 10px; /* Adjust the top margin for better spacing on mobile */
+  }
+
+  .rightContent {
+    padding-right: 20px; /* Adjust the right padding for better spacing on mobile */
+  }
+  .sectionText p {
+    padding: 10;
+  }
 }

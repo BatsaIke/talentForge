@@ -11,21 +11,21 @@
   color: #0D324A;
   font-weight: 600;
 }
+
 .blogPost {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center;
+  justify-content: center;
   border-bottom: 3px solid #999999;
 }
 
 .postTitle {
   font-size: 14px;
-  text-align: center; /* Center the title text */
+  text-align: center;
   color: #336699;
- 
 }
 
 .postContent {
@@ -36,8 +36,6 @@
   text-align: center;
 }
 
-
-  
 .readMoreLink {
   padding: 4px 15px 4px 15px;
   background-color: #336699;
@@ -45,11 +43,26 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  margin-bottom: 10px; /* Adjust as needed */
+  margin-bottom: 10px;
   text-align: center;
   font-size: 10px;
 }
 
 .readMoreLink:hover {
   background-color: #0D324A;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .postTitle {
+    font-size: 12px; /* Decrease font size for smaller screens */
+  }
+
+  .postContent {
+    font-size: 10px; /* Decrease font size for smaller screens */
+  }
+
+  .readMoreLink {
+    font-size: 8px; /* Decrease font size for smaller screens */
+  }
 }

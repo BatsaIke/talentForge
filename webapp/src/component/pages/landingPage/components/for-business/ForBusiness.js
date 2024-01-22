@@ -25,12 +25,12 @@ const ForBusiness = () => {
         <div className={styles.rightContent}>
           <div className={styles.rightItem}>For Businesses</div>
           <div className={styles.rightItemContent}>
-            <h2 style={{ width: 300, color: '#2D2F34', textAlign: "right" }}>
+            <h2 >
               Get involved in shaping the next generation of workers
             </h2>
             <Link href={"signup"}className={styles.applyButton}>Sign Up</Link>
             <div className={styles.sectionText}>
-              <p style={{ fontSize: 12, width: 400, textAlign: "right" }}>
+              <p >
                 Hire a pre vetted coah-able intern interest and  {' '}
                 <br></br>with condiderable knowledge in your industry
               </p>

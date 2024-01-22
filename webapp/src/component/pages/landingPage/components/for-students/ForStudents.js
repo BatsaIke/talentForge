@@ -11,12 +11,12 @@ const ForStudents = () => {
         <div className={styles.leftContent}>
           <div className={styles.leftItem}>For Students</div>
           <div className={styles.leftItemContent}>
-            <h2 style={{ width: 300, color: '#2D2F34', marginBottom:"25px", textAlign:"left" }}>
+            <h2 >
               Hone your skills with first-hand industry experience
             </h2>
             <Link href={"login"} className={styles.applyButton}>Apply Here</Link>
             <div className={styles.sectionText}>
-              <p style={{ fontSize: 14, width: 400,padding: 10 }}>
+              <p >
                 Get your next internship appointment. Join this network{' '}
                 <br></br>of businesses with job opportunities in various
                 industries.

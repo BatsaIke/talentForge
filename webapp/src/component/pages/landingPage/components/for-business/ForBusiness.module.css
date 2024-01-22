@@ -1,78 +1,106 @@
 /* styles/ForStudents.module.css */
 
 .container {
-    display: flex;
-    width: 100%;
-    padding-right: 30px;
-    box-sizing: content-box;
-    
+  display: flex;
+  width: 100%;
+  padding-right: 30px;
+  box-sizing: content-box;
 }
 
 .leftColumn,
 .rightColumn {
-    flex: 1;
-    overflow:inherit;
-    flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px ;
+  flex: 1;
+  overflow: inherit;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  box-sizing: border-box; /* Include padding and borders in the width calculation */
 }
 
 .rightContent {
-    display: flex;
-    flex-direction: column;
-   
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; /* Make sure the content takes up the full width */
 }
-
-
 
 .rightItemContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end; /* Optional: Align items to the right horizontally */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end; /* Optional: Align items to the right horizontally */
+  text-align: right;
+  width: 100%; /* Make sure the content takes up the full width */
+}
 
-  
+.rightItemContent h2 {
+  display: flex;
+  width: 100%; /* Make sure the content takes up the full width */
+  color: '#2D2F34';
+  text-align: right;
+}
 
 .rightItem {
-    margin-bottom: 10px;
-    padding: 10px 0px 0px 0px;
-    text-align: right;
-    font-weight: 600;
-    color: #fe904b;
-
+  margin-bottom: 10px;
+  padding: 10px 0px 0px 0px;
+  text-align: right;
+  font-weight: 600;
+  color: #fe904b;
 }
-
 
 .applyButton {
-    margin-top: 20px;
-    padding: 10px 30px 10px 30px;
-    border: 2px solid #ff2828 !important;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: transparent;
-    text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 30px 10px 30px;
+  border: 2px solid #ff2828 !important;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
 }
-.applyButton:hover{
-    background-color: #fe904b;
-    color: #fff;
-    border: none;
+
+.applyButton:hover {
+  background-color: #fe904b;
+  color: #fff;
+  border: none;
 }
 
 .sectionText {
-    margin-top: 15px;
-    /* margin-bottom: 50px; */
+  margin-top: 15px;
+  /* margin-bottom: 50px; */
+}
+.sectionText p {
+  font-size: 12;
+  width: 400;
+  text-align: right;
+}
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%; /* Make sure the content takes up the full width */
 }
 
-
-
-.leftContent {
-    display: flex;
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    padding: 10px;
+    padding-right: 0; /* Remove right padding on mobile for full width */
+  }
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+    padding-top: 20px; /* Adjust the top padding for better spacing on mobile */
+    width: 100%; /* Make sure the content takes up the full width */
+  }
+
+  .rightContent {
+    padding-top: 20px; /* Adjust the top padding for better spacing on mobile */
+  }
+
+  .applyButton {
+    margin-top: 10px; /* Adjust the top margin for better spacing on mobile */
+  }
 }

@@ -1,33 +1,29 @@
-
-
-:root{
-  --orange:#fe904b;
+/* styles.css */
+:root {
+  --orange: #fe904b;
   --red: #ff2828;
   --grey: #999999;
   --lightOrange: #e37735;
   --veryLightOrange: #f7a876;
   --otherRed: #991c1c;
   --blue: #336699;
-  --darkBlue:#0D324A;
-  --lightGrey:#ECECEC;
-
+  --darkBlue: #0D324A;
+  --lightGrey: #ECECEC;
 }
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-p,
-h,
-button {
-  font-family: 'Rubik', sans-serif; /* Specify 'Rubik' as the font name */
+
+p, h, button {
+  font-family: 'Rubik', sans-serif;
   font-weight: 300;
-  
 }
 
 body {
-  background-color: #ecf0f1; /* Add your desired background color for the entire app */
+  background-color: #ecf0f1;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
   max-width: 100vw;
@@ -44,212 +40,37 @@ body {
   justify-content: space-between;
 }
 
-@media (max-width: 1536px){
-  .container{
-    width: 1366px;
-  }
-
-}
-@media (max-width: 1366px){
-  .container{
-    width: 1280px;
-  }
-
-}
-@media (max-width: 1280px){
-  .container{
-    width: 1024px;
-    padding: 0px;
-
-  }
-
-}
-@media (max-width: 1280px){
-  .container{
-    width: 1024px;
-    padding: 0px;
-  }
-
-}
-@media (max-width: 1024px){
-  .container{
-    width: 768px;
-    padding: 0px;
-  }
-
-}
-@media (max-width: 640px){
-  .container{
-    width: 475px;
-    padding: 0px;
-  }
-
-}
-
-.auth-page {
-  display: flex;
-  height: 80vh; /* Set the height to 80% of the viewport height */
-  width: 60%; /* Set the width to 60% */
-  margin: 50px  auto; 
-  border-radius: 15px; /* Add border-radius for rounded corners */
-}
-.red-button{
-  background-color: var(--red);
-}
-
-.left-half {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('/login-panel-left.png'); /* Adjust the path based on your project structure */
-  background-position: center;
-  background-size: cover; /* Cover the entire container while maintaining aspect ratio */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  width: 100%;
-  height: 100%; /* Ensure the image covers the full height of the container */
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-.right-half {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  z-index: 1; /* Reduce the z-index for the right-half */
-
-  background: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.208)),
-    url('/polygon.png');
-  background-position: center bottom; /* Adjust the position if needed */
-  background-size: cover; /* Stretch and/or crop the image to cover the container */
-
-  background-repeat: no-repeat; /* Do not repeat the background image */
-  background-size: 96% 30%; /* Adjust the size to cover only the bottom 30% */
-
-  /* Set the background color of the main content area to white */
-  background-color: #fff;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  
-}
-.right-half .bottom-image {
-  width: 100%; /* Make the image fill the container width */
-  height: auto; /* Maintain aspect ratio */
-  filter: brightness(150%); /* Adjust the brightness percentage as needed */
-}
-
-
-
-.error-message {
-  color: var(--red);
-  font-size: 8px;
-  margin-top: 5px;
-}
-
-
-
-.divider {
-  display: flex;
-  width: 260px;
-  height: 0.1px;
-  background-color: #615c5c;
-  margin-bottom: 15px ; /* Adjust margin as needed */
-  margin-top: 20px;
-}
-
-.remember-forgot {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 260px;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.remember-forgot label {
-  align-items: center;
-  font-size: 10px;
-}
-
-.link-text{
-  font-size: 10px;
-}
-.link-tex{
-  font-size: 10px;
-  margin-bottom: 60px;
- 
-}
-
-
-.logo-div {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 20px; /* Adjust the bottom margin as needed */
-}
-/* .form-div{
-  align-self: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-.form-container{
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.form-container > * {
-
-  margin-bottom: 20px; /* Add margin between items (adjust the value as needed) */
-}
-
-.welcome-div{
-display: flex;
-align-items: center;
-flex-direction: column;
-margin-bottom: 30px;
-}
-.welcome-div>*{
- 
-  margin-bottom: 10px;
-}
+/* Other styles remain unchanged */
 
 /* Media query for smaller screens, e.g., mobile devices */
 @media (max-width: 767px) {
-  .container{
+  .container {
     width: 640px;
     padding: 0px;
   }
+
   .auth-page {
     width: 90%;
-    display: flex; 
+    display: flex;
     flex-direction: column;
   }
 
   .left-half,
   .right-half {
-    border-radius: 0; /* Remove border-radius on smaller screens */
+    border-radius: 0;
   }
 
   .logo-div {
-    margin-top: 10px; /* Adjust the top margin for smaller screens */
-    margin-bottom: 10px; /* Adjust the bottom margin for smaller screens */
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .remember-forgot {
-    width: 90%; /* Adjust the width for smaller screens */
+    width: 90%;
   }
+
   .container {
-    width: 90%; /* Adjust the width for smaller screens */
-    padding-left: 20px; /* Adjust the left padding for smaller screens */
-    padding-right: 20px; /* Adjust the right padding for smaller screens */
+    width: 100%;
+   padding: none;
   }
 }

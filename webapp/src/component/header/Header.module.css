@@ -76,11 +76,10 @@
     text-decoration: none;
 }
   .loginButton:hover{
-    background-color: #f7a876;
+   
     border: 1.5px solid #ffffff;
-    color: #ffffff;
-    padding: 7px 15px 7px 15px;
-
+    color: #ff2828;
+  
 }
   
   .applyButton {
