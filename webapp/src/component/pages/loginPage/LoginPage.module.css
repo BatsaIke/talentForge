@@ -1,0 +1,123 @@
+/* LoginPage.module.css */
+
+.authPage {
+  display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+.leftHalf {
+  flex: 1;
+  display: flex;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.loginImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+
+.rightHalf {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  padding: 20px;
+  background-color: #ffffff;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+}
+
+.logoDiv {
+  margin-bottom: 20px;
+}
+
+.formDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formDiv button:hover{
+background-color: var(--red);
+}
+
+.welcomeDiv {
+  margin-bottom: 20px;
+  text-align: center;
+ 
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  /* padding: 0px 50px 0px 50px   ; */
+  box-sizing: border-box;
+  
+}
+.formContainer input {
+  margin-bottom: 20px; /* Keep this as is or adjust if needed */
+}
+
+.errorMessage {
+  color: var(--red);
+  font-size: 12px;
+  margin-top: 0px; /* Adjust the margin-top as needed */
+  margin-bottom: 0; /* Remove the margin-bottom or set it to 5px if needed */
+  text-align: center;
+}
+
+
+.divider {
+  width: 70%;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.rememberForgot {
+  display: flex;
+  font-size: 12px;
+  justify-content: flex-end;
+  
+}
+.rememberForgot > * {
+  margin-right: 10px; 
+}
+
+.linkTex {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .authPage {
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column; 
+  }
+
+  .leftHalf,
+  .rightHalf {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; /* Remove bottom-left radius on smaller screens */
+    border-top-right-radius: 0; /* Remove top-right radius on smaller screens */
+    border-bottom-right-radius: 0;
+    width: 100%; 
+
+  }
+
+  
+}
+

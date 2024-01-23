@@ -24,7 +24,6 @@ p, h, button {
 
 body {
   background-color: #ecf0f1;
-  font-family: 'Rubik', sans-serif;
   font-weight: 300;
   max-width: 100vw;
   overflow-x: hidden;
@@ -42,35 +41,10 @@ body {
 
 /* Other styles remain unchanged */
 
-/* Media query for smaller screens, e.g., mobile devices */
 @media (max-width: 767px) {
   .container {
-    width: 640px;
-    padding: 0px;
-  }
-
-  .auth-page {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .left-half,
-  .right-half {
-    border-radius: 0;
-  }
-
-  .logo-div {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .remember-forgot {
-    width: 90%;
-  }
-
-  .container {
     width: 100%;
-   padding: none;
+    padding: 0;
   }
 }
+

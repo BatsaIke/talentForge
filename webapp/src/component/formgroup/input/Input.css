@@ -2,7 +2,7 @@
 
 /* Default styles for larger screens */
 .my-input {
-  padding: 15px;
+  padding: 11px;
   border: none;
   border-radius: 24px;
   min-width: 260px;
@@ -10,7 +10,7 @@
 }
 
 .my-input::placeholder {
-  padding: 20px; 
+  padding: 15px; 
   padding-left: 2px;
 }
 
