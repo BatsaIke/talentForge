@@ -1,0 +1,63 @@
+/* ProfileBio.module.css */
+.profileBio {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  flex-direction: row;
+  padding: 20px;
+  position: relative;
+  width: 80%;
+  border-radius: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bioDiv {
+  margin-left: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align to the right */
+  flex-direction: column;
+  width: 100%;
+}
+
+.profileImage {
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+}
+
+.skills {
+  display: flex;
+  align-items: center;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.skills li {
+  margin-right: 8px;
+  text-align: center;
+}
+
+.bio {
+  margin: 0;
+}
+
+.bio p {
+  margin-bottom: 20px;
+}
+
+.icon {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Add space between icon and text */
+}

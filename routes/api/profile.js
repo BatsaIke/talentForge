@@ -47,6 +47,7 @@ router.get(
 // delete profile experience
 router.delete('/experience/:exp_id',checkObjectId('exp_id'), auth, deleteAProfileExperience);
 
+// update profile experience
 router.put(
   '/education',
   auth,
@@ -69,8 +70,8 @@ router.delete('/education/:edu_id', checkObjectId('edu_id'),auth, deleteAProfile
 // @desc     Get user repos from Github
 router.get('/github/:username', getGithubRepo);
 
-// @route    PUT api/profile/projects
-// @desc     Add profile projects
+// @route    PUT api/v1/profile/projects
+// @desc    update profile projects
 router.put(
   '/projects',
   auth,
@@ -85,7 +86,7 @@ router.put(
 router.delete('/projects/:project_id', checkObjectId('project_id'),auth, deleteAProfileProject);
 
 // @route    PUT api/profile/certificates
-// @desc     Add profile certificates
+// @desc     update profile certificates
 // @access   Private
 router.put(
   '/certificates',

@@ -1,0 +1,50 @@
+/* StudentJobs.module.css */
+.studentJobs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+
+  }
+  .studentJobs h2{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .jobItem {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    text-decoration: none;
+    color: var(--grey);
+    margin-left: 60px;
+  }
+  
+  .logo {
+    width: 50px; /* Adjust the width of the logo as needed */
+    height: 50px; /* Adjust the height of the logo as needed */
+    margin-right: 20px;
+  }
+  
+  .jobDetails {
+    flex: 1;
+  }
+  
+  .jobDetails h3 {
+    margin-bottom: 5px;
+    color: var(--grey);
+    text-decoration: none;
+  }
+  
+  .horizontalRule {
+    display: flex;
+    width: 70%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+  }
+  

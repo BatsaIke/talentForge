@@ -10,6 +10,35 @@
   --darkBlue: #0D324A;
   --lightGrey: #ECECEC;
 }
+@font-face {
+  font-family: 'Rubik';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/Rubik-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: bold;
+  font-style: normal;
+  src: url('/fonts/Rubik-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: normal;
+  font-style: italic;
+  src: url('/fonts/Rubik-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: bold;
+  font-style: italic;
+  src: url('/fonts/Rubik-BoldItalic.ttf') format('truetype');
+}
+
+
 
 * {
   margin: 0;
@@ -23,6 +52,7 @@ p, h, button {
 }
 
 body {
+  font-family: 'Rubik', sans-serif;
   background-color: #ecf0f1;
   font-weight: 300;
   max-width: 100vw;

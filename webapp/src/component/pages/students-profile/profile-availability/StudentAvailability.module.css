@@ -1,0 +1,30 @@
+/* ProfileDetails.module.css */
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.profileDetails section {
+  display: flex;
+  column-gap: 30px;
+  padding: 0 10px 10px 80px;
+}
+.profileDetails h2{
+    font-size: 16px;
+    color: var(--orange);
+    padding: 20px 20px 20px 20px;
+}
+
+.icon {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}

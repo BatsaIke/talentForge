@@ -11,22 +11,37 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { SignupSchema } from '@/component/validation/validationShema';
 import styles from './Register.module.css';
 import Image from 'next/image';
+import { useDispatch } from 'react-redux';
+import { register } from '@/api-actions/authActions';
+import { useSearchParams, useRouter } from 'next/navigation';
+
 
 
 const RegisterPage = () => {
+const dispatch = useDispatch()
+
+
+const search = useSearchParams();
+const paramName = search.get('userType');
+
+
     const { control, handleSubmit, formState: { errors } } = useForm({
       resolver: yupResolver(SignupSchema),
     });
   
-    const onSubmit = (data) => {
+    const onSubmit = async(data) => {
+        await dispatch(register(data))
       console.log(data);
     };
-  
+
+    let urlPath;
+    {paramName === 'student'? urlPath="/login-panel-left.png": urlPath="/company-signup.png"}
+
     return (
       <div className={styles.authPage}>
         <div className={styles.leftHalf}>
           
-          <Image src="/login-panel-left.png" alt="Login Image"width={200} height={200} className={styles.loginImage}/>
+          <Image src={urlPath} alt="Login Image"width={200} height={200} className={styles.loginImage}/>
         </div>
         <div className={styles.rightHalf}>
           <div className={styles.logoDiv}>
@@ -35,14 +50,16 @@ const RegisterPage = () => {
           <div className={styles.formDiv}>
             <div className={styles.welcomeDiv}>
               <h3 className={styles.welcomeText}>Welcome</h3>
-              <p className={styles.loginText}>Register as a student to continue</p>
+              <p className={styles.loginText}>{paramName === 'student'
+                ? 'Register as a student to continue'
+                : 'Register as a company to continue'}</p>
             </div>
             <form onSubmit={handleSubmit(onSubmit)} className={styles.formContainer}>
               <Controller
                 name="username"
                 control={control}
                 render={({ field }) => (
-                  <Input placeholder="Username" {...field} />
+                  <Input placeholder="Username"autoComplete="current-username" {...field} />
                 )}
               />
               {errors.username && <p className={styles.errorMessage}>{errors.username.message}</p>}
@@ -51,7 +68,7 @@ const RegisterPage = () => {
                 name="email"
                 control={control}
                 render={({ field }) => (
-                  <Input placeholder="Email" {...field} />
+                  <Input placeholder="Email" autoComplete="current-email" {...field} />
                 )}
               />
               {errors.email && <p className={styles.errorMessage}>{errors.email.message}</p>}
@@ -60,7 +77,7 @@ const RegisterPage = () => {
                 name="password"
                 control={control}
                 render={({ field }) => (
-                  <Input placeholder="Password" type="password" {...field} />
+                  <Input placeholder="Password" type="password" {...field} autoComplete="current-password" />
                 )}
               />
               {errors.password && <p className={styles.errorMessage}>{errors.password.message}</p>}
@@ -71,7 +88,7 @@ const RegisterPage = () => {
             </form>
             <hr className={styles.divider} />
             <div className={styles.linkText}>
-              Don&apos;t have an account? <Link href={"login"} className={styles.linkTex}>Login here?</Link>
+              Don&apos;t have an account? <Link href={{ pathname: paramName, query: { userType: 'student' } }} priority className={styles.linkTex}>Login here?</Link>
             </div>
           </div>
         </div>

@@ -1,129 +1,128 @@
 /* styles/Header.module.css */
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-image: url('/header.png'); 
-    background-position: center;
-    background-size: cover; /* Cover the entire container while maintaining aspect ratio */
-    background-repeat: no-repeat;     color: white;
-    position: relative;
-  }
-  
-  .logo {
-    order: 1;
-    padding: 10px 10px 10px 50px;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 10px;
-    order: 2;
-  }
-  
-  .navItem {
-    padding: 0 20px;
-    color: black;
-    position: relative;
-    font-weight: 400;
-    text-decoration: none;
-    /* font-family: Rubik serif; */
-    
-  }
-  
-  .navItem::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0; /* Adjust the position as needed */
-    bottom: 0;
-    width: 1.5px;
-    background-color: black;
-}
-  
-  .navItem:first-child::before {
-    display: none; /* Hide the separator for the first item */
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 10px;
-    order: 3;
-  }
-  
-  .applyButton,
-  .hireButton {
-    border-radius: 9px;
-    font-weight: 200;
-    padding: 7px 15px 7px 15px;
-  }
-  
-  .applyButton:hover,
-  .hireButton:hover {
-      background-color: #f7a876;
-      border: 1.5px solid #ffffff;
-      color: #ffffff;
-  }
-  .loginButton {
-    padding: 7px;
-    border-radius: 5px;
-    color: black;
-    margin-right: 100px;
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-}
-  .loginButton:hover{
-   
-    border: 1.5px solid #ffffff;
-    color: #ff2828;
-  
-}
-  
-  .applyButton {
-    border: 2px solid #ff2828;
-}
-.hireButton{
-    background-color: #ff2828;
-    color: #ffffff;
-    border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: url('/header.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box; /* Include padding within the width */
+  width: 100%; /* Ensure the header spans the full width */
+  z-index: 30;
 }
 
-.mobileLinks{
-  display: none;
+.logo {
+  order: 1;
+  padding: 10px 10px 10px 50px;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  order: 2;
+}
+
+.navItem {
+  padding: 0 20px;
+  color: black;
+  position: relative;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
 
 }
 
-.navItemMobile{
- display: none;
+.navItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0; /* Adjust the position as needed */
+  bottom: 0;
+  width: 1.5px;
+  background-color: black;
 }
 
+.navItem:first-child::before {
+  display: none; /* Hide the separator for the first item */
+}
 
+.buttons {
+  display: flex;
+  gap: 10px;
+  order: 3;
+}
 
-.menuButton{
+.applyButton,
+.hireButton {
+  border-radius: 9px;
+  font-weight: 200;
+  padding: 7px 15px 7px 15px;
+}
+
+.applyButton:hover,
+.hireButton:hover {
+  background-color: #f7a876;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+}
+
+.loginButton {
+  padding: 7px;
+  border-radius: 5px;
+  color: black;
+  margin-right: 100px;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+.loginButton:hover {
+  border: 1.5px solid #ffffff;
+  color: #ff2828;
+}
+
+.applyButton {
+  border: 2px solid #ff2828;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.hireButton {
+  background-color: #ff2828;
+  color: #ffffff;
+  border: none;
+}
+
+.mobileLinks {
   display: none;
 }
 
-  
+.navItemMobile {
+  display: none;
+}
 
-
+.menuButton {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .nav {
     display: none !important;
   }
-  .menuButton{
+  .menuButton {
     display: block;
   }
-  .buttons{
+  .buttons {
     display: none;
   }
   .mobileLinks {
     position: absolute;
     top: 100px;
-    right: 0 ;
+    right: 0;
     width: 50%;
     height: 100vh;
     background-color: var(--darkBlue);
@@ -134,9 +133,9 @@
     gap: 10px;
     overflow: hidden;
     transition: height 0.5s ease-in-out;
-}
+  }
 
-.navItemMobile {
+  .navItemMobile {
     display: flex;
     text-decoration: none !important;
     color: #fff;
@@ -144,34 +143,34 @@
     align-items: left;
     text-align: left !important;
     padding: 5px;
-}
-  
-  .navItemMobile{
+  }
+
+  .navItemMobile {
     display: flex;
     text-decoration: none !important;
     color: #fff;
     font-weight: 600;
     padding: 5px;
   }
-  
-  .buttonsMobile{
+
+  .buttonsMobile {
     display: flex;
     flex-direction: column;
     padding: 5px;
     align-items: left;
   }
-  .buttonsMobile button{
+  .buttonsMobile button {
     padding: 5px;
     margin-top: 8px;
   }
-  
-  .loginButton{
+
+  .loginButton {
     color: #fff;
   }
-    
- .mobileDiv{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
- }
+
+  .mobileDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
 }

@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(faBriefcase);
 
-9;
+
 const JobOffers = () => {
   return (
     <div className={styles.jobOffersPage}>

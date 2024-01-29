@@ -1,0 +1,52 @@
+/* ProfileDocuments.module.css */
+.profileDocuments {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
+ .profileDocuments h2{
+    font-size: 16px;
+    color: var(--orange);
+    margin-bottom: 5px;
+  }
+  .profileDocuments p{
+    margin-left: 60px;
+    font-size: 15px;
+    padding: 5px;
+    color: var(--grey);
+  }
+  
+  .requiredDocuments,
+  .optionalDocuments,
+  .projects,
+  .experience {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    
+  }
+  .requiredDocuments{
+    padding-top: 30px;
+  }
+  .experience{
+    padding-bottom: 30px;
+  }
+  .verticalLine {
+    margin-top: 20px; /* Adjust the top margin as needed */
+    width: 90%;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .icon {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    margin: 0 auto;
+  }

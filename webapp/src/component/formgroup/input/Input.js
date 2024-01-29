@@ -1,10 +1,11 @@
 // MyInput.js
 import React from 'react';
-import './Input.css'
+import './Input.css';
 
-const Input = ({ placeholder, onChange, value,type,props }) => {
+const Input = React.forwardRef(({ placeholder, onChange, value, type, ...props }, ref) => {
   return (
     <input
+      ref={ref}
       type={type}
       placeholder={placeholder}
       onChange={onChange}
@@ -13,7 +14,6 @@ const Input = ({ placeholder, onChange, value,type,props }) => {
       {...props}
     />
   );
-};
-
+});
 
 export default Input;

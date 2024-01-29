@@ -1,0 +1,51 @@
+/* StudentsProfile.module.css */
+
+
+  
+  /* StudentsProfile.module.css */
+
+.profileContainer {
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #999999, #ECECEC);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+  
+  .leftContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 70%;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .rightContent {
+    flex: 30%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .myapplications,
+  .jobexplore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adjust this value to control the space between items */
+    background-color: #fff;
+    padding: 30px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 600px; 
+    margin: 10px auto;
+    text-decoration: none; 
+  }
+  
+  .rightContent span{
+    color: var(--grey);
+  }

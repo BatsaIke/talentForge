@@ -14,7 +14,8 @@ const ForStudents = () => {
             <h2 >
               Hone your skills with first-hand industry experience
             </h2>
-            <Link href={"login"} className={styles.applyButton}>Apply Here</Link>
+            <Link href={{ pathname: 'login', query: { userType: 'student' } }} className={styles.applyButton}>Apply Here</Link>
+            
             <div className={styles.sectionText}>
               <p >
                 Get your next internship appointment. Join this network{' '}
