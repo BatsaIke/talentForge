@@ -13,7 +13,11 @@
   width: 100%; /* Ensure the header spans the full width */
   z-index: 30;
 }
-
+.header p {
+  font-size: 12px;
+  padding: 2px;
+  color: var(--grey);
+}
 .logo {
   order: 1;
   padding: 10px 10px 10px 50px;
@@ -33,11 +37,13 @@
   text-decoration: none;
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align the container's content to the center */
 }
 
 .navItem::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0; /* Adjust the position as needed */
@@ -88,7 +94,6 @@
 .applyButton {
   border: 2px solid #ff2828;
   font-family: 'Rubik', sans-serif;
-
 }
 
 .hireButton {
@@ -173,4 +178,39 @@
     flex-direction: column;
     align-items: left;
   }
+}
+.iconProfile,
+.iconApplication,
+.iconJobs {
+  font-size: 20px; /* Adjust the font size as needed */
+  border-radius: 50%;
+  background-color: var(--red); /* Set the background color of the icon */
+  padding: 15px;
+}
+
+.iconApplication {
+  background-color: var(--orange); /* Set the background color of the icon */
+}
+.iconProfile {
+  background-color: var(--grey); /* Set the background color of the icon */
+}
+
+.buttons .icon {
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--grey);
+  font-size: 20px;
+}
+
+.profileButton,
+.notificationButton,
+.chatButton {
+  border: none;
+}
+
+.profileButton{
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+  padding: 20px;
+
 }

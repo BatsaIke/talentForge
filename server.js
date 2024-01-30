@@ -33,7 +33,7 @@ app.use('/api/v1/profile', require('./routes/api/profile'));
 app.use('/api/v1/posts', require('./routes/api/posts'));
 app.use('/api/v1/company', require('./routes/api/companyRoute'));
 app.use('/api/v1/company/job', require('./routes/api/jobPostRoute'));
-app.use('/api/v1/student/job', require('./routes/api/AplyForJobRoute'));
+app.use('/api/v1/student/job', require('./routes/api/AplyForJobRoute')); 
 
 
 

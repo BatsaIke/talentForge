@@ -5,7 +5,7 @@ import ProfileBio from './profile-bio/ProfileBio';
 import ProfileDetails from './profile-details/ProfileDetails';
 import ProfileDocuments from './profile-documents/ProfileDocuments';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBusinessTime, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faBusinessTime, faBook,faUser } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import StudentJob from './students-jobs/StudentJob';
 import StudentAvailability from './profile-availability/StudentAvailability';
@@ -50,7 +50,7 @@ const StudentsProfile = () => {
           onClick={() => handleViewChange('profile')}
           className={styles.jobexplore}
         >
-          <FontAwesomeIcon icon={faBook} color="#e37735" size="2xl" />
+          <FontAwesomeIcon icon={faUser} color="#e37735" size="2xl" />
           <span>My Profile</span>
         </button>
         <button
