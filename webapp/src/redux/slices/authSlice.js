@@ -1,16 +1,13 @@
 // authSlice.js
 
-
-
 import { createSlice } from '@reduxjs/toolkit';
-
 
 const authInitialState = {
   token: null, // Initialize token as null
   isAuthenticated: false,
   loading: false,
   error: null,
-  user: null,
+  user: null
 };
 
 const authSlice = createSlice({
@@ -39,14 +36,12 @@ const authSlice = createSlice({
     },
     // New action for logout
     logout: (state) => {
-      useClient(() => {
-        localStorage.removeItem('token');
-      });
+      localStorage.removeItem('token');
       state.token = null;
       state.isAuthenticated = false;
       state.user = null;
-    },
-  },
+    }
+  }
 });
 
 export const {
@@ -56,7 +51,7 @@ export const {
   setUser,
   resetAuth,
   resetAuthState,
-  logout, // Include the new logout action
+  logout // Include the new logout action
 } = authSlice.actions;
 
 export default authSlice.reducer;
