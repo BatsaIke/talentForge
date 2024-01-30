@@ -15,5 +15,5 @@ const Input = React.forwardRef(({ placeholder, onChange, value, type, ...props }
     />
   );
 });
-
+Input.displayName = 'Input';
 export default Input;

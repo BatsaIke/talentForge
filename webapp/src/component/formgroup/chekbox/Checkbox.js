@@ -12,5 +12,5 @@ const Checkbox = React.forwardRef(({ label, checked, onChange, ...rest }, ref) =
     </div>
   );
 });
-
+Checkbox.displayName = 'Checkbox';
 export default Checkbox;
